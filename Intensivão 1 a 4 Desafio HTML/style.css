@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;
+
+  /*colors variables*/
+  --color-base-white: #FFFFFF;
+  --color-base-offwhite: #F9F4FB;
+  --color-base-background-1: #343193;
+  --color-base-background-2: #302C63;
+  --color-base-darkpurple: #312D64;
+  --color-base-magenta: #B52184;
+}
+
+body {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.app {
+  max-width: 43rem;
+  margin-inline: auto;
+}
+
+header {
+  background-color: var(--color-base-offwhite);
+  padding: 0 4rem;
+}
+
+header img {
+  width: 100%;
+  margin-bottom: 1.7rem;
+}
+
+header h1 {
+  color: var(--color-base-magenta);
+  font-size: 3.2rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+header p {
+  color: var(--color-base-darkpurple);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0.5rem 0 3.5rem;
+}
+
+.header-text img {
+  height: 10.5rem;
+  margin-bottom: 9.3rem;
+}
+
+#content {
+  background: linear-gradient(96deg, var(--color-base-background-1) 0%, var(--color-base-background-2) 99.68%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.9rem;
+  padding: 5.2rem 3.9rem;
+}
+
+.card {
+  background: #FFF;
+  padding: 2.6rem;
+  border-radius: 2rem;
+  box-shadow: 0px 3.311px 13.243px 0px rgba(0, 0, 0, 0.25)
+}
+
+.card img {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 3.3rem;
+}
+
+.card h2 {
+  color: var(--color-base-magenta);
+  font-size: 2.9rem;
+  font-weight: 900;
+  margin-bottom: 1.9rem;
+}
+
+.card p {
+  color: var(--color-base-darkpurple);
+}
+
+fieldset {
+  border: none;
+}
+.contact {
+  background-color: var(--color-base-offwhite);
+  padding: 5.2rem 3.9rem;
+}
+
+.contact legend {
+  color: var(--color-base-magenta);
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 4.3rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  position: absolute;
+  overflow-y:hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+.input-wrapper input, textarea {
+  margin-bottom: 2.4rem;
+  padding: 1.2rem 1.6rem;
+  border-radius: 16px;
+  border: 1.5px solid var(--color-base-darkpurple);
+
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-base-darkpurple);
+}
+
+.input-wrapper input {
+  padding: 1.2rem 1.6rem 1.2rem 5rem;
+}
+
+#fullname {
+  background-image: url('./assets/person.svg');
+  background-repeat: no-repeat;
+  background-position: left 1.4rem top 50%;
+}
+
+#email {
+  background-image: url('./assets/at.svg');
+  background-repeat: no-repeat;
+  background-position: left 1.4rem top 50%;
+}
+
+.button {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: var(--color-base-white);
+
+  border-radius: 1.6rem;
+  background: linear-gradient(96deg, var(--color-base-background-1) 0%, var(--color-base-background-2) 99.68%);
+  padding: 1.6rem;
+}
+
+footer {
+  background: linear-gradient(96deg, var(--color-base-background-1) 0%, var(--color-base-background-2) 99.68%);
+  padding: 3.2rem 1rem;
+  font-size: 2.0rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-base-white);
+}
+
+@media(min-width: 1440px) {
+  body {
+    font-size: 1.9rem;
+  }
+  
+  .app {
+    max-width: 144rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction:row-reverse;
+    padding: 0 3rem 10rem 11rem;
+    gap: 2.8rem;
+  }
+
+  header img {
+    max-width: 73.2rem;
+  }
+
+  header h1 {
+    font-size: 5.8rem;
+    margin-top: 31.2rem;
+    text-align: left;
+  }
+  
+  header p {
+    font-size: 3.2rem;
+    text-align: left;
+    margin: 0.8rem auto 17.9rem;
+  }
+  
+  .header-text img {
+    height: 10.5rem;
+    padding: 0 52.3rem 3.2rem 0
+  }
+
+  #content {
+    flex-direction: row;
+    align-items: initial;
+    gap: 6rem;
+    padding: 6.4rem 11.1rem;
+  }
+
+  .card {
+    padding: 3.2rem;
+    border-radius: 2.4rem;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .card img {
+    width: 9.7rem;
+    height: 9.7rem;
+    margin-bottom: 4rem;
+  }
+
+  .card h2 {
+    color: var(--color-base-magenta);
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 2.4rem;
+  }
+
+  .card p {
+    width: 32.1rem;
+  }
+
+  .contact {
+    background-color: var(--color-base-offwhite);
+    background-image: url('https://s3-alpha-sig.figma.com/img/01bf/82dc/f45e68a27da8460fb4770654d98bf3d4?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dYOOhY4dGr4vbCcC8AtTZYsxFTiGf8u0VVX8L66VqXH2FpK1nLKJCStFQCkBOFCfEV1MXm0dpCRYWgu7Xxs1~Ax0THEWpnn72Z5Tn8-Igi~loe-dJQiy-Lrp4M5Y~mkUTJjz9AwCD7vNp~o4VDSU4Y8-Vp7IRuMq2vinsOaQ8~xMFAh0vw9ctgGWwEZaitRKfVS1fHue~99zbI7WUTREzwyLXZk1FolU51A-idDJO2CzAIz1BX3p7LUskydcWOWSGxAnI6h0IdU7eGU-T~bAxwMaCvOt~iKX5s07mL8JMNTiqnhgmfSd36-qlL56YF3KSrHj8r1C46H~h2SvodhJ-Q__');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding: 5.2rem 3.9rem;
+  }
+
+  form {
+    margin: 9.5rem 73.6rem 9.4rem 10.9rem
+  }
+
+  .contact legend {
+    font-size: 4.2rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+  }
+  
+ }
